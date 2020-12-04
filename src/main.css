@@ -7,7 +7,7 @@
     border-radius: 5px;
     color: whitesmoke;
     text-align: center;
-    box-shadow: 3px 3px 3px #9baaac;
+    box-shadow: 3px 3px 3px #bccfd1;
     text-transform: uppercase;
     color: #F9FDF8;
 }
@@ -15,7 +15,7 @@
     margin: 20px auto;
     display: block;
     width: 100px;
-    height: 40px;
+    height: 50px;
     text-transform: uppercase;
     background-color: #8B9496;
     border: 1px solid #8B9496;
