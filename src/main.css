@@ -1,0 +1,127 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header {
+    border: 1px solid #272854;
+    background-color: #272854;
+    border-radius: 5px;
+    color: whitesmoke;
+    text-align: center;
+    box-shadow: 3px 3px 3px #A1AAAB;
+    text-transform: uppercase;
+    color: #F9FDF8;
+}
+.reg-btn {
+    margin: 20px auto;
+    display: block;
+    width: 100px;
+    height: 40px;
+    text-transform: uppercase;
+    background-color: #8B9496;
+    border: 1px solid #8B9496;
+    border-radius: 5px;
+    color: #F9FDF8;
+    font-weight: 900;
+    cursor: pointer;
+    outline: none;
+}
+
+.reg-btn:hover {
+    box-shadow: 3px 3px 3px #272854;
+    width: 120px;
+    height: 50px;
+}
+.cards {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.user-card {
+    text-align: center;
+    width: 300px;
+    background-color: #F9FDF8;
+    box-shadow: 5px 3px 3px lightgray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.img-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:  1px solid white;
+    margin: 15px auto;
+}
+.img-container img {
+    width: 100%;
+}
+
+.name {
+    color: #272854;
+}
+
+.age {
+    border: 1px solid #858590;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    background-color: #858590;
+    box-shadow: 3px 3px 3px lightgray;
+    color: white;
+    margin: 0 auto;
+}
+
+.email {
+    color: #272854;
+    text-decoration: underline;
+}
+
+.link {
+    text-decoration: none;
+}
+form {
+    width: 70%;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    display: block;
+    margin: 20px auto;
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid lightgray;
+    box-shadow: 3px 3px 3px darkgray;
+    font-size: 16px;
+    padding: 7px;
+}
+
+input[type="submit"] {
+    margin: 20px auto;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #272854;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+
+}
+input[type="button"]:hover {
+    box-shadow: 4px 4px 4px #A1AAAB;
+    width: 110px;
+    height: 45px;
+}

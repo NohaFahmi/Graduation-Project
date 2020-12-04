@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+//
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware} from 'redux';
+import  promiseMiddleware  from 'redux-promise';
+
+import reducers from './reducers';
+import Register from './containers/register-form';
+import Home from './containers/Home';
+import Header from './components/header';
+//
+//json-server port is localhost:3005
+
+const createStoreWithMW = applyMiddleware(promiseMiddleware)(createStore);
+const App = () => {
+    return (
+        <Provider store={createStoreWithMW(reducers)}>
+            <Header />
+            <Router>
+                <div className='container'>
+                    <Switch>
+
+                        <Route path="/register" component ={Register} />
+                        <Route path="/users" component ={Home} />
+                        <Route path="/" exact component ={Home} />
+                        <Route path="*" render={() => (
+                            <h1 className="error">
+                                404
+                            </h1>
+                        )} />
+
+                    </Switch>
+                </div>
+                
+            </Router>
+
+        </Provider>
+        
+    )
 }
 
 export default App;

@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Casper Skypp",
+      "age": 23,
+      "email": "cskypp0@time.com",
+      "avatar": "img-03"
+    },
+    {
+      "id": 2,
+      "name": "Hermy Giacomelli",
+      "age": 30,
+      "email": "hgiacomelli1@lulu.com",
+      "avatar": "img-02"
+    },
+    {
+      "id": 3,
+      "name": "Chance Gatiss",
+      "age": 21,
+      "email": "cgatiss2@comcast.net",
+      "avatar": "img-10"
+    },
+    {
+      "id": 4,
+      "name": "Mac Costin",
+      "age": 29,
+      "email": "mcostin3@cargocollective.com",
+      "avatar": "img-11"
+    },
+    {
+      "id": 5,
+      "name": "Chance Riddich",
+      "age": 27,
+      "email": "criddich4@hao123.com",
+      "avatar": "img-06"
+    },
+    {
+      "name": "Sara F.",
+      "age": "32",
+      "email": "sara_f123@gmail.com",
+      "avatar": "img-10",
+      "id": 15
+    }
+  ]
+}
